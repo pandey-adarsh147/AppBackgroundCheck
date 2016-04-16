@@ -17,7 +17,7 @@ public class App extends Application implements ApplicationLifecycleCallback {
     public void onCreate() {
         super.onCreate();
 
-        registerActivityLifecycleCallbacks(new ApplicationLifecycle(this));
+        registerActivityLifecycleCallbacks(new ApplicationLifecycle(this, 10000));
     }
 
     @Override
